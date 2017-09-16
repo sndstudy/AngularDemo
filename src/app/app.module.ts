@@ -1,16 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+//import { AppComponent } from './app.component';
+import {MainComponent} from './main/main.component';
 
 @NgModule({
+  //使用するクラス
   declarations: [
-    AppComponent
+    MainComponent
   ],
+
+  //使用するモジュール
   imports: [
     BrowserModule
   ],
+
+  //DI元となるクラス
   providers: [],
-  bootstrap: [AppComponent]
+
+  //最初に起動するコンポーネント
+  bootstrap: [MainComponent]
 })
 export class AppModule { }
